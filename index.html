@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Klima</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Set background to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center content vertically */
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    max-width: 800px; /* Limit width for better readability */
+    width: 100%;
+  }
+  .left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Center text horizontally */
+  }
+  .left-section {
+    border-right: 2px solid #ccc; /* Vertical line between sections */
+  }
+  .left-section-text-container {
+    border-radius: 20%; /* Border radius adjusted to match the image */
+    padding: 40px 20px; /* Adjusted padding to expand border by height */
+    background-color: #f9f9f9; /* Background color for better contrast */
+  }
+  .contact-info {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333; /* Dark color for contrast */
+  }
+  /* Oval shape for the image */
+  .oval-image {
+    border-radius: 20%; /* Make it 20% to match the text container */
+    filter: grayscale(100%); /* Set grayscale filter to 100% */
+  }
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-section, .right-section {
+      width: 100%;
+      border-right: none; /* Remove border for small screens */
+    }
+    .left-section {
+      border-bottom: 2px solid #ccc; /* Horizontal line between sections */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-section">
+    <div class="left-section-text-container">
+      <h1>Diese Website ist schon bald für Sie erreichbar!</h1>
+      <p class="additional-text">Fühlen Sie sich frei, uns telefonisch oder per E-Mail zu kontaktieren.</p>
+      <p class="contact-info">Kontakt: info@alexklima.com | Telefon: +436767719664</p>
+    </div>
+  </div>
+  <div class="right-section">
+    <img src="images/homepage.jpg" alt="Your Image" style="max-width: 100%;" class="oval-image">
+  </div>
+</div>
+
+</body>
+</html>
